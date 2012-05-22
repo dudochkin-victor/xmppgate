@@ -1,0 +1,4 @@
+xmppgate
+========
+
+Jabber BOSH gateway
