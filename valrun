@@ -1,0 +1,10 @@
+backdate=`date +%Y.%m.%d-%H.%M`
+ulimit -c 300000
+
+cd dist
+./Debug/GNU-Linux-x86/jazz 0.0.0.0 8085  
+#valgrind --leak-check=yes --show-reachable=yes --log-file=valgrind.$backdate.log \
+#    --num-callers=20 --track-fds=yes ./Debug/GNU-Linux-x86/jazz 0.0.0.0 8085  
+
+#gdb -x gdb.cmd; fg
+#--tool=memcheck 
